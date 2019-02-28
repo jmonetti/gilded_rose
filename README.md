@@ -57,10 +57,9 @@ Hemos firmado un nuevo acuerdo para vender items "conjured", sin embargo necesit
 
 * Los items "conjured" disminuyen de calidad el doble de rápido que el resto.
 
-Por supuesto puedes hacer cualquier cambio al método updateQuality si lo consideras necesario mientras que todo siga funcionando claro esta!. Sin embargo hay dos cosas que no puedes hacer:
+Solo para despejar dudas, ningun item puede tener Calidad mayor a 50, sin embargo "Sulfuras" es un item legendario que tiene calidad 80 y nunca cambia.
 
-* Cambiar el interfaz y la forma de uso de GildedRose (la función update_quality), es fea, lo sabemos, pero tenemos muchos sistemas que la utilizan y no vamos a cambiarlos todos ahora!
-* ¡No puedes tocar la clase item!. Pertenece a una especie de goblin asesino que no cree en cosas como la propiedad colectiva del código.
+
 
 [Este es el repo del Kata original](https://github.com/emilybache/GildedRose-Refactoring-Kata) creado por EmilyBache
 
