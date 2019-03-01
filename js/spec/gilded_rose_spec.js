@@ -175,45 +175,52 @@ describe("Gilded Rose", function() {
 
   // TODO: next test are skipped :( till someone write the functionality
 
-  // it("Conjured item before sell date", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", 5, 10);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(8);
-  //   expect(gildedRose.sell_in).toBe(4);
-  // });
-  //
-  // it("Conjured item at zero quality", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", 5, 0);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(0);
-  //   expect(gildedRose.sell_in).toBe(4);
-  // });
-  //
-  // it("Conjured item on sell date", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", 0, 10);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(6);
-  //   expect(gildedRose.sell_in).toBe(-1);
-  // });
-  //
-  // it("Conjured item on sell date at zero quality", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", 0, 0);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(0);
-  //   expect(gildedRose.sell_in).toBe(-1);
-  // });
-  //
-  // it("Conjured item after sell date", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", -10, 10);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(6);
-  //   expect(gildedRose.sell_in).toBe(-11);
-  // });
-  //
-  // it("Conjured item after sell date at zero quality", function() {
-  //   gildedRose = new GildedRose("Conjured Mana Cake", -10, 0);
-  //   gildedRose.update_quality();
-  //   expect(gildedRose.quality).toBe(0);
-  //   expect(gildedRose.sell_in).toBe(-11);
-  // });
+  it("Conjured item before sell date", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", 5, 10);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(8);
+    expect(gildedRose.sell_in).toBe(4);
+  });
+  
+  it("Conjured item at zero quality", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", 5, 0);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(0);
+    expect(gildedRose.sell_in).toBe(4);
+  });
+  
+  it("Conjured item on sell date", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", 0, 10);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(6);
+    expect(gildedRose.sell_in).toBe(-1);
+  });
+  
+  it("Conjured item on sell date at zero quality", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", 0, 0);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(0);
+    expect(gildedRose.sell_in).toBe(-1);
+  });
+  
+  it("Conjured item after sell date", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", -10, 10);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(6);
+    expect(gildedRose.sell_in).toBe(-11);
+  });
+  
+  it("Conjured item after sell date at zero quality", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", -10, 0);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(0);
+    expect(gildedRose.sell_in).toBe(-11);
+  });
+  
+  it("Conjured item after sell date at one quality", function() {
+    gildedRose = new GildedRose("Conjured Mana Cake", -10, 1);
+    gildedRose.update_quality();
+    expect(gildedRose.quality).toBe(0);
+    expect(gildedRose.sell_in).toBe(-11);
+  });
 });
